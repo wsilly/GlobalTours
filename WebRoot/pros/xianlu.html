@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/lx.css" />
+		<link rel="stylesheet" href="css/heaerpublic.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<style>
+			/*立即定付*/
+			
+			.xianluBox {
+				height: auto;
+				width: 1200px !important;
+				margin: auto;
+				position: relative;
+			}
+			
+			.df_box {
+				margin: auto;
+				width: 1130px;
+				height: 232px;
+				border: 1px solid gray;
+				box-sizing: border-box;
+				display: -webkit-box;
+				margin-bottom: 30px !important;
+				margin-top: 20px;
+				background: #EAEAEA;
+			}
+			
+			.df_box>div:first-of-type {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-box-flex: 3;
+			}
+			
+			.df_box>div:last-of-type {
+				-webkit-box-flex: 5;
+			}
+			
+			.chuxiao {
+				border-bottom: 1px solid black;
+			}
+			
+			.chuxiao,
+			.chufdi {
+				line-height: 115px;
+				margin-left: 20px;
+				display: -webkit-box;
+				box-sizing: border-box;
+				-webkit-box-flex: 1;
+				box-sizing: border-box;
+			}
+			
+			.chuxiao span {
+				color: #FF5500;
+				margin: 0px 5px;
+				box-sizing: border-box;
+			}
+			
+			.chuxiao samp {
+				margin-left: 5px;
+				display: inline-block;
+				width: 80px;
+				height: 30px;
+				background: #FCA44C;
+				color: white;
+				box-sizing: border-box;
+				text-align: center;
+				line-height: 30px;
+			}
+			
+			.chuxiao div {
+				margin-left: 20px;
+				box-sizing: border-box;
+			}
+			
+			.chufdi span {
+				margin-left: 10px;
+				display: inline-block;
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				border: 1px solid black;
+				box-sizing: border-box;
+			}
+			
+			.chufdi div {
+				margin-left: 20px;
+				box-sizing: border-box;
+			}
+			
+			.ljydbtn {
+				width: 180px;
+				height: 60px;
+				font-size: 20px;
+				font-weight: bold;
+				color: white;
+				border: none;
+				outline: none;
+				position: relative;
+				left: 25%;
+				transform: translateY(87px);
+				background: #FF9A2C;
+			}
+			/*立即定付-标题*/
+			
+			.jingdian {
+				margin-top: 30px;
+				margin-left: 110px;
+				width: 200px;
+				text-align: left;
+				height: 30px;
+				line-height: 30px;
+				border-bottom: 1px solid #231815;
+				box-sizing: border-box;
+				font-size: 18px;
+				color: #262626;
+			}
+			
+			.jingdian>p>span {
+				color: 12px;
+				font-size: 12px;
+				color: #717071;
+				margin-left: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="mb"></div>
+			<div class="header_nav">
+				<div class="header_div">
+					<a href="index.html"><img src="img/logo-01.png"></a>
+					<ul class="ullist">
+						<li class="addclass"><a href="index.html">首页</a></li>
+						<li><a href="newslike.html">活动</a></li>
+						<li><a href="dinzhiyou.html">定制游</a></li>
+						<li><a href="html/lvyoumoshi.html">跟团游</a></li>
+						<li><a href="autoyou.html">自助游</a></li>
+						<li><a href="html/gonglue.html">攻略</a></li>
+					</ul>
+					<span class="long">
+						<a class="login">登录</a>|<a href="html/zhuce.html">注册</a>
+					</span>
+				</div>
+			</div>
+		</header>
+		<!--
+        	标题头部结束
+        -->
+		<!--////////////登录////////////-->
+		<!--登录最大的盒子-->
+		<form action="" method="post">
+			<div class="login_box">
+				<!--为了控制位子-->
+				<div class="ding">
+					<!--登录左边版块-->
+					<div class="login_L">
+						<h3>登录足迹</h3>
+						<div class="text_tj">
+							<p>如果你不出去走走，你就会以为这就是世界。</p>
+							<p>——《天堂电影院》</p>
+						</div>
+						<div class="inputs">
+							<input type="text" placeholder="您的邮箱/手机号" class="emailph"><label class="la1"></label>
+						</div>
+						<div class="inputs">
+							<input type="password" placeholder="您的密码" class="pwd"><label class="la2"></label>
+						</div>
+						<div class="wangji">
+							<div><a href="#">忘记密码?</a></div>
+							<div><input type="button" value="登录" class="loginbtn"></div>
+						</div>
+					</div>
+					<!--登录右边版块-->
+					<div class="login_R">
+						<div class="san">
+							<input type="button" value="QQ直接登录">
+							<div class="icon_qq"><img src="img/login_03.jpg"></img>
+							</div>
+						</div>
+						<div class="san">
+							<input type="button" value="微信直接登录">
+							<div class="icon_qq"><img src="img/login_04.jpg"></img>
+							</div>
+						</div>
+						<div class="san">
+							<input type="button" value="微博直接登录">
+							<div class="icon_qq"><img src="img/login_05.jpg"></img>
+							</div>
+						</div>
+						<div class="re">
+							<span><a href="#">还没有注册？</a></span>
+							<span><a href="#">立即注册></a></span>
+						</div>
+					</div>
+					<!--退出-->
+					<div class="tuichu">
+						×
+					</div>
+				</div>
+			</div>
+		</form>
+		<!--/////////////// 登录页面结束/////////////-->
+		<!--
+        	作者：1071341579@qq.com
+        	时间：2017-01-16
+        	描述：引用子页面
+        -->
+		<div class="imgs">
+			<img src="img/log-2.jpg" width="100%">
+		</div>
+		<!--搜索-->
+		<div class="ms_inputs">
+			<div class="ms_dangqian">
+				<p>
+					<input type="text" value="马尔代夫" class="ms_adress">
+					<label class="ms_dq">当前站</label>
+				</p>
+
+			</div>
+			<select class="xiala">
+					<option selected="selected">路线</option>
+					<option>路线一</option>
+					<option>路线二</option>
+					<option>路线三</option>
+				</select>
+			<input type="text" class="ms_search" />
+			<input type="button" class="ms_btn" value="搜索" />
+
+		</div>
+
+		<!--跟团游-->
+		<div class="gengtuan">
+			<p>线路介绍</p>
+		</div>
+		<!--行程安排-->
+		<div class="ts">
+			<span class="ts_one">行程安排</span>
+			<span class="md">Maldives</span>
+		</div>
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft">
+				<ul>
+					<li>第一天</li>
+					<li>第二天</li>
+					<li>第三天</li>
+					<li>第四天</li>
+					<li>第五天</li>
+					<li>第六天</li>
+				</ul>
+			</div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">9:30-12:00</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-01.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft"></div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">13:30-16:00</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-02.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft"></div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">9：30-12：00</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-03.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft"></div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">13：30-16：30</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-04.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft"></div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">9：30-12：00</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-05.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft"></div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">13：30-16：30</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-01.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft"></div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">9：30-12：00</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-02.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft"></div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">13：30-16：30</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-03.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+
+		<!--行程内容-->
+		<div class="xianluBox">
+			<div class="xlLeft"></div>
+			<div class="contents">
+				<img src="img/shu.jpg" width="100%" />
+				<div class="shuxian"></div>
+			</div>
+			<div class="xlRight">
+				<div class="cj">
+					<span class="jds">景点</span><span class="lu"></span><span class="ylw">亚龙湾</span>
+				</div>
+				<p class="sjs">9：30-12：00</p>
+				<div class="zt">
+					<p>亚龙湾是一个半月形的海湾，绵延7公里，平缓而宽阔。这里的沙粒洁白细软，蔚蓝的海水清澈晶莹，能见度达 9米。 五颜六色的珊瑚礁和各种热带鱼儿穿梭其中，跃入海水中畅游，五彩缤纷的鱼儿似乎触手可及。这里终年
+					</p>
+					<img src="img/1-04.jpg" width="100%" />
+				</div>
+				<div class="xx"></div>
+			</div>
+
+		</div>
+		
+		<!--立即定付-->
+		<div class="dfmian_box">
+			<!--立即定付-->
+			<div class="jingdian">
+				<p>立即定付<span>Maldives</span></p>
+			</div>
+			<div class="df_box">
+				<div>
+					<div class="chuxiao">促销价:<span>￥9999</span>起<samp>已省3333元</samp>
+						<div>满意度<span>99%</span></div>
+						<div>优惠活动:出团提前50天签约立减800元/人</div>
+					</div>
+					<div class="chufdi">出发城市<span>马尔代夫</span>
+						<div>出行日期<span>2017-02-03</span></div>
+						<div>出游人数<span>2</span></div>
+						<div>收藏</div>
+					</div>
+				</div>
+				<div>
+					<button class="ljydbtn">立即预定</button>
+				</div>
+			</div>
+		</div>
+		<!--立即定付结束-->
+		<div class="dtop">
+			<div class="fhtext">返回顶部</div>
+			<div class="fhimg"><img src="icon/XUP.jpg"></div>
+			<div class="lianxi"><img src="icon/LXKH.jpg"></div>
+		</div>
+		<footer class="footer">
+			<ul>
+				<li>京ICP备11017824号-4 / 京ICP证130164号</li>
+				<li>北京市公安局朝阳分局备案编号：110105000501</li>
+				<li>Copyright @ 2006-2017 ZCOOL</li>
+			</ul>
+			<ul>
+				<li>京ICP备11017824号-4 / 京ICP证130164号 版权信息</li>
+				<li>京ICP备11017824号-4 / 京ICP证130164号</li>
+				<li>北京市公安局朝阳分局备案编号：110105000501</li>
+				<li>Copyright @ 2006-2017 ZCOOL</li>
+			</ul>
+		</footer>
+	</body>
+
+</html>
