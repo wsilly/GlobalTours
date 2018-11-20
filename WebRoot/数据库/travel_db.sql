@@ -89,7 +89,7 @@ CREATE TABLE `customer_order_list` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for cus_sun_table
+-- Table structure for cus_sun_table 商家字表
 -- ----------------------------
 DROP TABLE IF EXISTS `cus_sun_table`;
 CREATE TABLE `cus_sun_table` (
